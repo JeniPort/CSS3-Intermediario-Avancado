@@ -1,0 +1,55 @@
+/*** PÁGINA CSS BARRA DE NAVEGAÇÃO VERTICAL ***/
+
+/*
+
+ul {
+- Remove a contagem da lista (listas por padrão já vem com padding) 
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	padding: 5px 20px;
+- Dois pontos serve para voltar uma pasta 
+	background: url(../imagens/seta.png) no-repeat left center;
+}
+
+*/
+
+ul {
+	margin: 0;
+	padding: 0;
+/* serve para retirar contagem de listas */
+	list-style-type: none;
+}
+
+ul a {
+	width: 200px;
+	height: 40px;
+	display: block;
+	color: #000;
+	text-decoration: none;
+	text-indent: 40px;
+/* define altura da linha onde o texto se encontra (recomendando usar baseado no height do elemento) */
+	line-height: 40px;
+/* colocar cor de fundo caso imagem background não carregue */
+	background: #f7b600 url(../imagens/menu.png) no-repeat left bottom;
+}
+
+a:hover {
+	/* posição background */
+	background-position: right bottom;
+	background-color: #f99200;
+	color: #fff;
+}
+
+/* marca automaticamente a página atual em que o usuário se encotra */
+/* dessa maneira pode diferenciar uma navegação da outra */
+#home #navegacao .home a, 
+#sobre #navegacao .sobre a,
+#servicos #navegacao .servicos a {
+	background-position: right bottom;
+	background-color: #f99200;
+	color: #fff;
+}

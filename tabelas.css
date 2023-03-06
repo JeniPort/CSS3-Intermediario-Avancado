@@ -1,0 +1,39 @@
+/*** PÁGINA CSS TABELAS ***/
+
+body {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+table {
+	width: 600px;
+	/* faz bordas colapsar uma na outra */
+	border-collapse: separate; /* ou collapse */
+}
+
+th, td {
+	padding: 7px;
+}
+
+th {
+	/* permite transformar texto em maiúscula  */
+	text-transform: uppercase;
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #111;
+	text-align: left;
+	font-size: 90%;
+	/* espaçamentos entre letras */
+	letter-spacing: 0.1em;
+}
+
+tr.alternado {
+	background-color: #efefef;
+}
+
+/* estado hover também pode ser usado com outros seletores */
+tr:hover {
+	background-color: #c3e6e5;
+}
+
+.numero{
+	text-align: right;
+}

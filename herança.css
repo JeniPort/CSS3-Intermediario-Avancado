@@ -1,0 +1,35 @@
+/*** PÁGINA CSS HERANÇA ESPECIFICIDADE ***/
+
+/* seletores iguais, exeção important */
+
+/*
+#pagina p {
+	color: red !important;
+}
+
+#pagina p {
+	color: blue;
+}
+*/
+
+/* quanto mais específico for o seletor, suas regras serão aplicadas */
+
+/* seletor universal (seleciona página toda) */
+* {
+	color: red; 
+}
+
+/* seletor específico (seleciona apenas <h1>) */
+h1 { /* 3º */
+	color: blue; 
+}
+
+/* seletor mais específico (seleciona <h2> com class "verde") */
+h2.verde { /* 2º */
+	color: green;
+}
+
+/* seletor mais específico ainda (ID é mais específico do que class) */
+h2#amarelo { /* 1º */
+	color: yellow;
+}
